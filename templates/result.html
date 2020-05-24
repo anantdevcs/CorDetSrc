@@ -1,0 +1,37 @@
+{%  extends 'layout.html' %}
+{% block content %}
+
+<h1 class="display-1">Result</h1>
+<hr>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+	The result predicted here should 
+  <strong>NOT</strong> be taken as a medical substitute.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+{% if message == 'Likely Positive' %}
+
+
+<blockquote class="blockquote bq-success">
+  <p class="bq-title">Looks Ok</p>
+  <p>
+  	Your are covid negative according to the CNN model.
+  </p>
+
+</blockquote>
+{% else %}
+<blockquote class="blockquote bq-warning">
+<p class="bq-title">Get checked</p>
+  <p>
+  	Your are {{message}} covid positive according to the CNN model.
+  </p>
+
+</blockquote>
+
+
+
+{% endif %}
+
+{% endblock %}

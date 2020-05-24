@@ -1,0 +1,40 @@
+{%  extends 'layout.html' %}
+{% block content %}
+
+<div class="container">
+	<!-- Default form login -->
+<form class="text-center border border-light p-5" action="/result" method="post" enctype="multipart/form-data">
+
+    <p class="h4 mb-4">Upload Your XRay </p>
+    <p class="h6 mb-4">In JPG format only with filesize < 20KB </p>
+    <p class="h6 mb-7">It takes around 1 Min to process the image. Be patient! </p>
+    <!-- Email -->
+    <div class="input-group">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+  </div>
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="inputGroupFile01" name = "file"
+      aria-describedby="inputGroupFileAddon01">
+    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+  </div>
+</div>
+
+    <!-- Sign in button -->
+    <button class="btn btn-info btn-block my-4" type="submit">Upload</button>
+
+    <!-- Register -->
+    
+</form>
+<!-- Default form login -->
+</div>
+
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+{% endblock %}

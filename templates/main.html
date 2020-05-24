@@ -1,0 +1,59 @@
+{%  extends 'layout.html' %}
+{% block content %}
+
+<div class="jumbotron card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+  <div class="text-white text-center py-5 px-4">
+    <div>
+      <h2 class="card-title h1-responsive pt-3 mb-5 font-bold"><strong>CorDet!</strong></h2>
+      <p class="mx-5 mb-5">An online tool for detection of COVID-19 from chest xray radiographs
+      </p>
+      <a class="btn btn-outline-white btn-md" href="/get_started"><i class="fas fa-clone left"></i>Get Started</a>
+    </div>
+  </div>
+</div>
+
+
+<div class = "container">
+
+  <h1 class="h1-responsive" id = "hdig">How does it work</h1>
+  <hr>
+  <p class="lead">
+  This web app uses a deep learning CNN model to classify the CXR images. More precisely MobileNet v1 pretrained on imagenet trained by transfer learning on a dataset of COVID-19 Positive and Negative images.
+  </p>
+  <h3 class="h3-responsive">The Dataset</h3>
+  <hr>
+  <p class="lead">
+  The dataset used here consisted of around 125 COVID-19 positive and around the same number of COVID-19 negative CXRs.
+  COVID-19 positive images came from dataset published on  <a href="https://github.com/ieee8023/covid-chestxray-dataset"> this </a> Github repo maintained by University of Montreal.
+  COVID-19 negative CXRs came from a kaggle challenge <br>
+  There is clearly lesser datat than what you would expect but with time better quality datasets will be available!
+  </p>
+
+  <h3 class="h3-responsive">Important Note</h3>
+  <hr>
+  <p class="lead">
+  This proof of concept is only for refernce purposes. Always refer a medical professional before taking any action!
+  </p>
+
+  <h3 class="h3-responsive">Performance on test set</h3>
+  <hr>
+  <p class="lead">
+  The dataset was randomly split into training, validation and test sets with the ratio 8:1:1. The model performed with a ttest set accuracy of more than 80%.
+  </p>
+
+</div>
+
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+  
+
+  
+{% endblock %}

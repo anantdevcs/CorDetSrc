@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href = " {{ url_for('static', filename = 'main.css') }}">
+    <style>
+      * {
+           font-size: 20px;
+           line-height: 2;
+        }
+    </style>
+
+    <title>CorDet</title>
+  </head>
+  <body class="bg">
+    <nav class="navbar navbar-expand-lg navbar-dark  deep-purple darken-4">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="/">CorViz</a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse px-5" id="basicExampleNav">
+
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto px-3">
+                <li class="nav-item active px-3">
+                    <a class="nav-link" href="#hdig">How Does It Work?
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <!-- Good story for another time
+                <li class="nav-item px-3 ">
+                    <a class="nav-link" href="/alerts">Examples</a>
+                </li> -->
+                <!-- <li class="nav-item px-3">
+                    <a class="nav-link" href="#">Countrywise</a>
+                </li> -->
+
+            </ul>
+
+            <a href = "/get_started">
+            <button class="btn  peach-gradient py-2 ">Get Started</button>
+        </a>
+            <!-- Links -->
+
+
+            <!-- Collapsible content -->
+
+    </nav>
+    <!--/.Navbar-->
+
+
+    {% block content %}
+
+    {% endblock content %}
+
+    <!-- Footer -->
+    <footer class="page-footer font-small deep-purple darken-4 pt-4 ">
+
+        <!-- Footer Text -->
+
+        <!-- Grid row -->
+
+        </div>
+        <!-- Footer Text -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 ">Follow!! 
+           <br>
+            <a href="https://github.com/anantdevcs/CoronaViz">
+                <button type="button" class="btn btn-outline-warning waves-effect mdb-color darken-3 "
+                    style="background-color: aliceblue;">
+
+                    <i class="fab fa-github pr-1"></i>
+
+                </button>
+            </a>
+            <a href="https://www.linkedin.com/in/anant-dev-9b3a801a4/">
+                <button type="button" class="btn btn-outline-warning waves-effect mdb-color darken-3 ">
+                    <i class="fab fa-linkedin pr-1"></i>
+
+                </button>
+            </a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+    
+    <!-- <div class="footer-margin p-3">
+      <center>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-github"></a>
+      </center>
+    </div -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+  </body>
+</html>
