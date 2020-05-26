@@ -14,18 +14,18 @@
 {% if message == 'Likely Positive' %}
 
 
-<blockquote class="blockquote bq-success">
-  <p class="bq-title">Looks Ok</p>
+<blockquote class="blockquote bq-warning">
+  <p class="bq-title">Get checked</p>
   <p>
-  	Your are covid negative according to the CNN model.
+  	Your are covid positive according to the CNN model.
   </p>
 
 </blockquote>
 {% else %}
-<blockquote class="blockquote bq-warning">
-<p class="bq-title">Get checked</p>
+<blockquote class="blockquote bq-success">
+<p class="bq-title">Looks Ok</p>
   <p>
-  	Your are {{message}} covid positive according to the CNN model.
+  	Your are covid negative according to the CNN model.
   </p>
 
 </blockquote>

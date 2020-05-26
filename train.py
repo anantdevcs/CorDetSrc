@@ -96,12 +96,12 @@ model.compile(optimizer='sgd', loss='categorical_crossentropy', metrics=['accura
 fit_history = model.fit_generator(
         train_generator,
         steps_per_epoch=STEPS_PER_EPOCH_TRAINING,
-        epochs = 2,
+        epochs = 10,
         validation_data=validation_generator,
         validation_steps=STEPS_PER_EPOCH_VALIDATION
 )
 
-model.save('mod.h5')
+model.save('mod1.h5')
 nm = tensorflow.keras.models.load_model('mod.h5')
 
 print(nm.summary())

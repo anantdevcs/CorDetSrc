@@ -47,7 +47,7 @@ def detect():
 
 @app.route('/result', methods = ['POST'])
 def result():
-	model = tensorflow.keras.models.load_model('mod.h5')
+	model = tensorflow.keras.models.load_model('save_model.h5')
 
 
 	raw_cxr = request.files['file']
@@ -65,10 +65,10 @@ def result():
 	cxr_np = cxr_np[...,:3]
 	print("thy shape" + str(cxr_np.shape))
 	cxr_np = cxr_np.reshape(1, 224, 224, 3) # image size feedabke to the neural network
-	temp = model.predict(cxr_np)[0]
+	temp = model.predict(cxr_np/255.0)[0]
 	print(temp)
 	guess_covid = (temp[0])
-	if guess_covid >=0.25:
+	if guess_covid >=0.3:
 		return render_template('result.html', message = "Likely Positive")
 		# return render_template('result.html', message = "Not likely")
 		
